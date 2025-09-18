@@ -1,0 +1,157 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mario César Gutiérrez — Página Personal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa5b1;
+      --accent:#4fd1c5;
+      --glass: rgba(255,255,255,0.04);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#071024 0%, #081228 60%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    .container{max-width:1000px;margin:48px auto;padding:28px;}
+    header{
+      display:flex;
+      gap:20px;
+      align-items:center;
+      padding:22px;
+      background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:14px;
+      box-shadow: 0 6px 30px rgba(2,6,23,0.7);
+      backdrop-filter: blur(6px);
+    }
+    .avatar{
+      width:104px;height:104px;border-radius:16px;background:linear-gradient(180deg,#0b3b34,#053036);
+      display:flex;align-items:center;justify-content:center;font-weight:800;font-size:28px;color:var(--accent);
+      flex:0 0 104px;
+    }
+    h1{font-size:28px;margin:0}
+    .tagline{color:var(--muted);margin-top:6px;font-size:14px;}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow: 0 8px 30px rgba(2,6,23,0.6);}
+    .section-title{font-weight:700;margin-bottom:12px;color:#dffaf4;}
+    p.lead{color:var(--muted);margin:0}
+    .contact-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:14px;color:var(--muted)}
+    .skill-pill{display:inline-block;padding:8px 12px;border-radius:999px;background:var(--glass);margin:6px 6px 6px 0;color:var(--muted);font-weight:600;font-size:13px}
+    .timeline{display:flex;flex-direction:column;gap:12px}
+    .timeline-item{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border-left:4px solid rgba(79,209,197,0.12)}
+    .timeline-item h4{margin:0;font-size:15px}
+    .muted{color:var(--muted);font-size:13px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr; }
+      header{flex-direction:row;gap:12px}
+    }
+    /* subtle accent button */
+    .btn-accent{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#2bb6a8);color:#022; font-weight:700;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">MG</div>
+      <div style="flex:1">
+        <h1>Mario César Gutiérrez Salazar</h1>
+        <div class="tagline">Estudiante y Desarrollador de Software • Interés en gestión de bases de datos y desarrollo multiplataforma</div>
+        <div style="margin-top:10px"><span class="muted">Habilidades:</span> Comunicación efectiva · Liderazgo · Resolución de problemas · Competencia informática</div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-weight:700;color:var(--accent)">Contacto</div>
+        <div class="muted" style="margin-top:6px">Tel: +52 81 2575 8623<br/>Email: mcgtz1@outlook.com</div>
+        <div style="margin-top:8px"><a class="btn-accent" href="mailto:mcgtz1@outlook.com">Enviar correo</a></div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card" aria-labelledby="sobre-mi">
+          <h2 id="sobre-mi" class="section-title">Sobre mí</h2>
+          <p class="lead">Soy un estudiante apasionado y dedicado con experiencia en el desarrollo y gestión de proyectos de software. Me enfoco en la excelencia y la eficiencia, buscando siempre superar expectativas y lograr resultados sobresalientes. Disfruto aprender nuevas tecnologías y trabajar en equipo para resolver problemas complejos.</p>
+        </section>
+
+        <section class="card" aria-labelledby="proyectos" style="margin-top:16px">
+          <h2 id="proyectos" class="section-title">Experiencia & Proyectos</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h4>Clínica Municipal de Santa Catarina — Practicante en el área de sistemas</h4>
+              <div class="muted">15 de abril 2024 — 30 de agosto 2024</div>
+              <p class="muted" style="margin-top:8px">Apoyo en tareas de sistemas, gestión y administración básica de infraestructura y bases de datos; participación en proyectos de mejora de procesos internos.</p>
+            </div>
+
+            <!-- placeholder para futuros proyectos -->
+            <div class="timeline-item" style="border-left-color: rgba(79,209,197,0.06)">
+              <h4>Proyectos académicos y cursos</h4>
+              <div class="muted">Gestión de base de datos | Desarrollo multiplataforma</div>
+              <p class="muted" style="margin-top:8px">Cursos y proyectos en la Universidad Tecnológica Santa Catarina y la Fundación Carlos Slim relacionados con desarrollo de software y bases de datos.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="habilidades" style="margin-top:16px">
+          <h2 id="habilidades" class="section-title">Habilidades técnicas y blandas</h2>
+          <div style="margin-top:8px">
+            <span class="skill-pill">Gestión de bases de datos</span>
+            <span class="skill-pill">Desarrollo multiplataforma</span>
+            <span class="skill-pill">Comunicación</span>
+            <span class="skill-pill">Liderazgo</span>
+            <span class="skill-pill">Resolución de problemas</span>
+            <span class="skill-pill">Competencia informática</span>
+          </div>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3 class="section-title">Formación</h3>
+          <ul style="padding:0;margin:0;list-style:none">
+            <li style="margin-bottom:12px">
+              <strong>Universidad Tecnológica Santa Catarina</strong><br/>
+              Desarrollo de software en área de Multiplataforma · 2022 - presente
+            </li>
+            <li style="margin-bottom:12px">
+              <strong>Preparatoria Politécnica Santa Catarina</strong><br/>
+              Técnica en Base de Datos · 2019 - 2022
+            </li>
+            <li>
+              <strong>Curso Fundación Carlos Slim</strong><br/>
+              Gestión de base de datos · 2022
+            </li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3 class="section-title">Idiomas</h3>
+          <div class="muted">Inglés — Básico</div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3 class="section-title">Contacto & Ubicación</h3>
+          <div class="muted">Alejandro III 805, El Castillo</div>
+          <div style="margin-top:8px"><a class="btn-accent" href="tel:+528125758623">Llamar</a></div>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer>
+      Contenido generado a partir del CV subido. Puedes editar este archivo HTML para ajustar textos y secciones. © Mario César Gutiérrez
+    </footer>
+  </div>
+</body>
+</html>
